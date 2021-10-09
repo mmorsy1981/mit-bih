@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-import os
+
 #import tensorflow as tf
 
 import tflite_runtime.interpreter as tflite
@@ -84,7 +84,7 @@ output_details = interpreter.get_tensor(output_details[0]['index'])
 # A helper function to evaluate the TF Lite model using "test" dataset.
 def evaluate_tflite_model(tflite_model):
   # Initialize TFLite interpreter using the model.
-  interpreter = tflite.Interpreter(model_content=tflite_model)
+  interpreter = tf.lite.Interpreter(model_content=tflite_model)
   interpreter.allocate_tensors()
   input_tensor_index = interpreter.get_input_details()[0]["index"]
   output = interpreter.tensor(interpreter.get_output_details()[0]["index"])
