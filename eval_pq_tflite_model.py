@@ -127,7 +127,7 @@ end = time.time()
 inference_time =  (end-start)/X_tst_tf.shape[0]
 throughput = X_tst_tf.shape[0]/(end-start)
 
-print("Inference on CPU is :", inference_time)
+print("Inference time on CPU is :", inference_time)
 print("Throughput on CPU is :", throughput, "sequence per second")
 
 print('tflite model accuracy = %.4f' % tflite_accuracy)

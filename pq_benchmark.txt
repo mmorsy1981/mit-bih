@@ -1,0 +1,18 @@
+STARTING!
+Unconsumed cmdline flags: -
+Log parameter values verbosely: [0]
+Num threads: [4]
+Graph: [./Conv1D/pq_model.tflite]
+#threads used for CPU inference: [4]
+Loaded model ./Conv1D/pq_model.tflite
+The input model file size (MB): 0.021776
+Initialized session in 1.438ms.
+Running benchmark for at least 1 iterations and at least 0.5 seconds but terminate if exceeding 150 seconds.
+count=275 first=3518 curr=1796 min=841 max=3518 avg=1818.35 std=147
+
+Running benchmark for at least 50 iterations and at least 1 seconds but terminate if exceeding 150 seconds.
+count=550 first=1941 curr=1835 min=1773 max=2000 avg=1818.08 std=25
+
+Inference timings in us: Init: 1438, First inference: 3518, Warmup (avg): 1818.35, Inference (avg): 1818.08
+Note: as the benchmark tool itself affects memory footprint, the following is only APPROXIMATE to the actual memory footprint of the model at runtime. Take the information at your discretion.
+Memory footprint delta from the start of the tool (MB): init=0.96875 overall=3.09766
