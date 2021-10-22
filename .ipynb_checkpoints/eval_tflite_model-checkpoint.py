@@ -50,7 +50,7 @@ X_tst = X_tst.astype('float32')
 X_tst_tf = X_tst_tf.astype('float32')
 
 
-tflite_model_file = 'pq_model.tflite'
+tflite_model_file = 'float32.tflite'
 
 # Load TFLite model and allocate tensors.
 with open(tflite_model_file, 'rb') as fid:
