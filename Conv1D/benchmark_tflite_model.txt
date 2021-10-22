@@ -1,0 +1,18 @@
+STARTING!
+Unconsumed cmdline flags: -
+Log parameter values verbosely: [0]
+Num threads: [4]
+Graph: [./Conv1D/float32.tflite]
+#threads used for CPU inference: [4]
+Loaded model ./Conv1D/float32.tflite
+The input model file size (MB): 0.038668
+Initialized session in 1.413ms.
+Running benchmark for at least 1 iterations and at least 0.5 seconds but terminate if exceeding 150 seconds.
+count=1435 first=2791 curr=406 min=166 max=2791 avg=346.229 std=123
+
+Running benchmark for at least 50 iterations and at least 1 seconds but terminate if exceeding 150 seconds.
+count=2383 first=438 curr=402 min=386 max=4757 avg=417.098 std=149
+
+Inference timings in us: Init: 1413, First inference: 2791, Warmup (avg): 346.229, Inference (avg): 417.098
+Note: as the benchmark tool itself affects memory footprint, the following is only APPROXIMATE to the actual memory footprint of the model at runtime. Take the information at your discretion.
+Memory footprint delta from the start of the tool (MB): init=1.23047 overall=3.10156

@@ -1,0 +1,4 @@
+Skipping, found downloaded files in "./mitbihcsv" (use force=True to force download)
+Inference on CPU is : 0.0006436101883039878
+Throughput on CPU is : 1553.7355035276155 sequence per second
+tflite model accuracy = 0.9930
